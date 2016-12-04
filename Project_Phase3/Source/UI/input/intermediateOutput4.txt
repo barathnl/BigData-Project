@@ -1,0 +1,1 @@
+{"device1":[{"android":2}],"device2":[{"iphone":1}],"device3":[{"windows":0}],"device4":[{"web":5}]}

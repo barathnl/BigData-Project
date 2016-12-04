@@ -1,0 +1,136 @@
+<html ng-app="Resume">
+    <head>
+        <title>Tweet Analysis</title>
+		<meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Customized CSS -->
+        <link rel="stylesheet" href="Style.css">
+		<!--W3 CSS--->
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="./js/app1.js"></script>
+		<script src="./js/app2.js"></script>
+		<script src="./js/app3.js"></script>
+		<script src="./js/app4.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#home">Team 24 - Tweet Analysis</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1"><i class="fa fa-database"></i>&nbsp;Query1</a></li>
+                    <li><a href="#section1"><i class="fa fa-database"></i>&nbsp;Query2</a></li>
+                    <li><a href="#section2"><i class="fa fa-database"></i>&nbsp;Query3</a></li>
+                    <li><a href="#section3"><i class="fa fa-database"></i>&nbsp;Query4</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="container-fluid">
+           <!--home section-->
+            <div id="home" class="row">
+                <div class="home">
+                    <div class="col-md-10 col-md-offset-2">
+                   
+					</div>
+                </div>
+            </div>
+           <!--section1 / Language / Device-->
+           <div id="section1" class="row grad1">
+               <div class="col-md-10 col-md-offset-1">
+			    
+					<div class="row">
+						<div class="col-md-6">
+							<div><H3><i class="fa fa-comment fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Tweet Language</H3></div>
+							<div class="space" style="height:2%"></div>
+							<div id="piechart_3d" class ="img-thumbnail"style="width: 100%; height: 400px;"></div> 
+						</div>
+						<div class="col-md-6">
+						<div><H3><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Tweeted Device Source</H3></div>
+						<div class="space" style="height:2%"></div>
+							<div id="bar_3d" class ="img-thumbnail"style="width: 100%; height: 400px;"></div> 
+						</div>
+					</div>
+				<div class="space" style="height:5%"></div>	   
+               </div>
+           </div>
+           <!--section2 / Tweet text-->
+           <div id="section2" class="row grad1">
+               <div class="col-md-10 col-md-offset-1">
+					<div><H3><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Top Tweet Text and Retweet Count</H3></div>
+					<div class="space" style="height:2%"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div id="chart_div" class ="img-thumbnail" style="width: 100%; height: 300px;"></div> 
+						</div>
+						<div class="col-md-6">
+						<table class="w3-table w3-striped w3-border w3-centered" style="width:100%">
+						  <tr class="w3-green">
+						    <th>Sr.No</th>
+						    <th>Retweet_Text</th> 
+						  </tr>
+						  <tr>
+							<td>1</td>
+							<td>Reporter: Sir, ye Devki kaun hai?\nDhoni: Meri maa\nR: Koi khaas wazah?\n\nDhoni: No yaar, Star plus wale paisa diye toh main emotional ho gaya.</td>
+						  </tr>
+						  <tr class="w3-white">
+							<td>2</td>
+							<td>Ravi Shastris way of explaining MS Dhonis stumping. #INDvsNZ #INDvNZ https://t.co/aGMg8M53Il</td>
+						   
+						  </tr>
+						  <tr>
+							<td>3</td>
+							<td>Just-In: Dhoni Searching for the Potential Areas to hit sixes, Meanwhile, KW Still Searching How To Win TossðŸ˜‚ #indvnz #indvsnz</td>
+							
+						  </tr>
+						   <tr class="w3-white">
+							<td>4</td>
+							<td>Kiwis gasping at Dhonis hummer. I bet cricketers are the only first world people who wish if they would have born in India instead.</td>
+							
+						  </tr>
+						</table>
+						</div>
+					</div>
+				<div class="space" style="height:5%"></div>	
+					
+               </div>
+           </div>
+           <!--section 3 / Maps-->
+           <div id="section3" class="row grad1">
+               <div class="col-md-10 col-md-offset-1">
+					<div><H3><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Tweet Location</H3></div>
+					<div class="space" style="height:2%"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div id="chart_div1" style="width: 700px; height: 450px;"></div> 
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+				<div class="space" style="height:5%"></div>
+                   
+               </div>
+           </div>
+           <!--Contact section-->
+           <div id="contact" class="row grad2">
+               <div class="col-md-10 col-md-offset-1">
+                   
+               </div>
+           </div>
+        </div>
+    </body>
+</html>
