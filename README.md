@@ -3,6 +3,7 @@
 Team 24
 
 Phase 1 project:
+
     1. Collecting Data from Twitter Feed
     
     2. Moving twitter feed dat to HDFS
