@@ -1,7 +1,5 @@
 # CS5540 Principal of BigData and Management Project
 
-Team 24
-
 Phase 1 project:
 
     1. Collecting Data from Twitter Feed
